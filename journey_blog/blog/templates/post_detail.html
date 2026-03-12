@@ -1,0 +1,6 @@
+<h1>{{ post.Title }}</h1>
+<p>{{ post.content }}</p>
+{%if post.image %}
+    <img src=""{{ post.image.url }} alt="Journey Image">
+{% endif %}
+<p>By {{ post.author.username }} on {{ post.created_at }}</p>
