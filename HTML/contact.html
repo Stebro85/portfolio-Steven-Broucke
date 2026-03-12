@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Steven Broucke - Full Stack Developer Journey</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../Afbeeldingen/favicon-16x16.png">
+        <link rel="stylesheet" href="../CSS/Style.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="../Afbeeldingen/Logo-wh-background.png" alt="logo">
+            <div class="title">
+                <h1>Steven Broucke</h1>
+                <p>"It’s never too late to learn, to grow, and to start a new adventure."</p>
+            </div>
+        </header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="../HTML/Bio.html">Bio</a></li>
+                    <li><a href="../HTML/Journey.html">Journey</a></li>
+                    <li><a href="../HTML/CV.html">CV</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </nav>       
+            <main>
+                <div class="contact-container">
+                    <form action="https://formspree.io/f/mkgpwevd" method="post">
+                        <label for="name">Full name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                        <label for="email">Email address:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+32 ..." pattern="[0-9+ ]{6,}" required>
+
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Message subject" required>
+
+                        <label for="message">Your message:</label>
+                        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+                        <button type="submit">Send message</button>
+                    </form>
+                </div>
+            </main>
+        <footer>
+            &copy; <span id="year"></span>
+            Steven Broucke. All rights reserved. 
+        </footer>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>
